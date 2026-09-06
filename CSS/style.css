@@ -17,7 +17,34 @@ body {
 /* =========================================
    2. HEADER Y NAVEGACIÓN (FLEXBOX)
    ========================================= */
-header {
+.navbar {
+    background-color: #2563eb;
+    padding: 15px 20px;
+}
+
+/* Altura uniforme para las imágenes del carrusel */
+.carousel-item img {
+    height: 400px;
+    object-fit: contain; 
+}
+
+/* Transición suave para el estado normal de la tarjeta */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Efecto al pasar el cursor */
+.card:hover {
+    transform: translateY(-10px); /* El valor negativo la mueve hacia arriba */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Sombra más pronunciada para dar efecto 3D */
+}
+
+.card-img-top{
+    height: 310px;
+    object-fit: cover;
+}
+
+header p{
     background-color: #ffffff;
     padding: 20px 40px;
     border-bottom: 4px solid #2563eb;

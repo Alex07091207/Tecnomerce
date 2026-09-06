@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tecnomerce - Tu tienda de tecnología en línea. Encuentra los mejores productos y ofertas en nuestra tienda.">
-    <link rel="stylesheet" href="CSS/style.css">
     <title>Videojuegos Express</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header>
-        <h1>Tecnomerce</h1>
-        <div>
-            <span>
-                <form>
-                    <input type="text" placeholder="Buscar productos...">
-                </form>
-            </span>
-        </div>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tecnomerce.cl</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contactos</a>
+                </li>
+            </ul>
+            </div>
+    </div>
+</nav>
         <p class="description">Tu tienda de videojuegos favorita. Encuentra los mejores juegos y 
         accesorios para tu consola en esta página.</p>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        
     </header>
 
     <main>
@@ -33,28 +41,65 @@
         <h2>Productos Destacados</h2>
         <p>Descubre nuestros productos más populares y no te pierdas las ofertas especiales.</p>
         <p>¡No te pierdas nuestras ofertas especiales!</p>
-            <ul>
-                <li>
-                    <h3>GTA VI</h3>
-                    <img src="./Imagenes/poster_full.0az_iud2g3y4j.avif" alt="GTA VI" width="200">
-                    <p>El próximo juego de la serie GTA que promete una experiencia de juego innovadora y emocionante.</p>
-                    <p class="precio">$10.000</p>
-                </li>
+        <div class="container mt-4">
+        <div class="row justify-content-center">
+        <!-- Columna que ocupa 8 espacios y se centra -->
+        <div class="col-md-8">
+            
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./Imagenes/audifonos-lenovo.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                <img src="./Imagenes/ps5.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                <img src="./Imagenes/camara.jpg" class="d-block w-100" alt="..." 
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    </div>
+</div>
+        
+            <div class="row mt-5 g-4">
+                    <!-- Columna para el primer producto -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./Imagenes/64ea9f0e-6c8f-44f9-8866-429edbad9784.jpg" class="card-img-top" class="" alt="Audifonos Lenovo">
+                            <div class="card-body">
+                                <h5 class="card-title">Audífonos Lenovo</h5>
+                                <p class="card-text fw-bold">$24.990</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./Imagenes/poster_full.0az_iud2g3y4j.avif" class="card-img-top" alt="Cámara Olympus E-330">
+                            <div class="card-body">
+                                <h5 class="card-title">Audífonos Lenovo</h5>
+                                <p class="card-text fw-bold">$24.990</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <li>
-                    <h3> Fifa 27</h3>
-                    <img src="./Imagenes/images.jpg" alt="Fifa 27" width="200" height="170">
-                    <p>El último juego de la serie Fifa que promete una experiencia de juego realista y emocionante.</p>
-                    <p class="precio">$15.000</p>
-                </li>
-
-                <li>
-                    <h3>Call of Duty: Modern Warfare 3</h3>
-                    <img src="./Imagenes/64ea9f0e-6c8f-44f9-8866-429edbad9784.jpg" alt="Call of Duty: Modern Warfare 3" width="300">
-                    <p>El último juego de la serie Call of Duty que promete ser uno de los mejores juegos de acción de la actualidad.</p>
-                    <p class="precio">$20.000</p>
-                </li>
-            </ul>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./Imagenes/images.jpg" class="card-img-top" alt="God of War">
+                            <div class="card-body">
+                                <h5 class="card-title">Audífonos Lenovo</h5>
+                                <p class="card-text fw-bold">$24.990</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
         </section>
     </main>
 
@@ -67,6 +112,6 @@
         <p> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg> Instagram: videojuegosexpress_1109</p>
 
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
