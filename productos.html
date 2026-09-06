@@ -4,62 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos - Tecnomerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header>
-        <h1>Tecnomerce</h1>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tecnomerce.cl</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contactos</a>
+                    </li>
+                </ul>
+                </div>
+        </div>
+    </nav>
     </header>
     <main>
         <h2>Lista de Productos</h2>
         <p>Aquí puedes encontrar todos nuestros productos disponibles al mejor precio.</p>
         
         <section>
-            <ul>
-                <!-- Producto 1: Audífonos Lenovo -->
-                <li>
-                    <h3>Audífonos Lenovo</h3>
-                    <!-- IMPORTANTE: Cambia "lenovo.jpg" por el nombre real de tu imagen -->
-                    <img src="./Imagenes/audifonos-lenovo.jpg" alt="Audífonos Inalámbricos Lenovo">
-                    <p>Audífonos inalámbricos con estuche de carga, ideales para música y gaming.</p>
-                    <p class="precio">$24.990</p>
-                </li>
+                <div class="row mt-5 g-4">
+                    <!-- Columna para el primer producto -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./Imagenes/audifonos-lenovo.jpg" class="card-img-top" class="" alt="Audifonos Lenovo">
+                            <div class="card-body">
+                                <h5 class="card-title">Audífonos Lenovo</h5>
+                                <p class="card-text fw-bold">$24.990</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./Imagenes/camara.jpg" class="card-img-top" alt="Cámara Olympus E-330">
+                            <div class="card-body">
+                                <h5 class="card-title">Audífonos Lenovo</h5>
+                                <p class="card-text fw-bold">$24.990</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <!-- Producto 2: Cámara Olympus -->
-                <li>
-                    <h3>Cámara Olympus E-330</h3>
-                    <!-- IMPORTANTE: Cambia "olympus.jpg" por el nombre real de tu imagen -->
-                    <img src="./Imagenes/camara.jpg" alt="Cámara Olympus E-330">
-                    <p>Cámara réflex digital de alta calidad para capturar tus mejores momentos.</p>
-                    <p class="precio">$189.990</p>
-                </li>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./Imagenes/god-of-war.jpg" class="card-img-top" alt="God of War">
+                            <div class="card-body">
+                                <h5 class="card-title">Audífonos Lenovo</h5>
+                                <p class="card-text fw-bold">$24.990</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <!-- Producto 3: God of War -->
-                <li>
-                    <h3>God of War</h3>
-                    <!-- IMPORTANTE: Cambia "godofwar.jpg" por el nombre real de tu imagen -->
-                    <img src="./Imagenes/god-of-war.jpg" alt="Juego God of War">
-                    <p>Acompaña a Kratos y Atreus en esta épica aventura nórdica llena de acción.</p>
-                    <p class="precio">$39.990</p>
-                </li>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./Imagenes/ps5.webp" class="card-img-top" alt="PS5">
+                            <div class="card-body">
+                                <h5 class="card-title">Audífonos Lenovo</h5>
+                                <p class="card-text fw-bold">$24.990</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
 
-                <!-- Producto 4: PlayStation 5 -->
-                <li>
-                    <h3>PlayStation 5</h3>
-                    <!-- IMPORTANTE: Cambia "ps5.jpg" por el nombre real de tu imagen -->
-                    <img src="./Imagenes/ps5.webp" alt="Consola PlayStation 5">
-                    <p>Consola de nueva generación con tiempos de carga ultra rápidos y gráficos 4K.</p>
-                    <p class="precio">$499.990</p>
-                </li>
-            </ul>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
