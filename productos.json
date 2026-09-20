@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nombre": "Audífonos Lenovo",
+        "precio": 24990,
+        "imagen": "assets/img/audifonos-lenovo.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Cámara Olympus E-330",
+        "precio": 150000,
+        "imagen": "assets/img/camara.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Consola PS5",
+        "precio": 450000,
+        "imagen": "assets/img/ps5.webp"
+    }
+]

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos - Tecnomerce</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
@@ -23,8 +23,13 @@
                     <li class="nav-item">
                     <a class="nav-link" href="productos.html">Productos</a>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Categoría: Consolas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Categoría: Accesorios</a></li>
                     <li class="nav-item">
                     <a class="nav-link" href="contacto.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="carrito.html">Carrito</a>
                     </li>
                 </ul>
                 </div>
@@ -32,65 +37,66 @@
     </nav>
     </header>
     <main>
+    <div class="text-center mt-4 mb-5">
         <h2>Lista de Productos</h2>
         <p>Aquí puedes encontrar todos nuestros productos disponibles al mejor precio.</p>
-        
+    </div>
         <section>
-                <div class="row mt-5 g-4">
-                    <!-- Columna para el primer producto -->
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./Imagenes/audifonos-lenovo.jpg" class="card-img-top" class="" alt="Audifonos Lenovo">
-                            <div class="card-body">
-                                <h5 class="card-title">Audífonos Lenovo</h5>
-                                <p class="card-text fw-bold">$24.990</p>
-                                <a href="#" class="btn btn-primary">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./Imagenes/camara.jpg" class="card-img-top" alt="Cámara Olympus E-330">
-                            <div class="card-body">
-                                <h5 class="card-title">Audífonos Lenovo</h5>
-                                <p class="card-text fw-bold">$24.990</p>
-                                <a href="#" class="btn btn-primary">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row mt-5 g-4">
+    <!-- Columna para el primer producto -->
+    <div class="col-md-4">
+        <div class="card">
+            <img src="assets/img/audifonos-lenovo.jpg" class="card-img-top" alt="Audífonos Lenovo">
+            <div class="card-body">
+                <h5 class="card-title">Audífonos Lenovo</h5>
+                <p class="card-text fw-bold">$24.990</p>
+                <button class="btn btn-primary btn-agregar" data-id="101" data-nombre="Audífonos Lenovo" data-precio="24990">Comprar</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <img src="assets/img/camara.jpg" class="card-img-top" alt="Cámara Olympus E-330">
+            <div class="card-body">
+                <h5 class="card-title">Cámara Olympus E-330</h5>
+                <p class="card-text fw-bold">$150.000</p>
+                <button class="btn btn-primary btn-agregar" data-id="102" data-nombre="Cámara Olympus E-330" data-precio="150000">Comprar</button>
+            </div>
+        </div>
+    </div>
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./Imagenes/god-of-war.jpg" class="card-img-top" alt="God of War">
-                            <div class="card-body">
-                                <h5 class="card-title">Audífonos Lenovo</h5>
-                                <p class="card-text fw-bold">$24.990</p>
-                                <a href="#" class="btn btn-primary">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="assets/img/god-of-war.jpg" class="card-img-top" alt="God of War">
+            <div class="card-body">
+                <h5 class="card-title">God of War</h5>
+                <p class="card-text fw-bold">$49.990</p>
+                <button class="btn btn-primary btn-agregar" data-id="103" data-nombre="God of War" data-precio="49990">Comprar</button>
+            </div>
+        </div>
+    </div>
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./Imagenes/ps5.webp" class="card-img-top" alt="PS5">
-                            <div class="card-body">
-                                <h5 class="card-title">Audífonos Lenovo</h5>
-                                <p class="card-text fw-bold">$24.990</p>
-                                <a href="#" class="btn btn-primary">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+    <div class="col-md-4">
+        <div class="card">
+            <img src="assets/img/ps5.webp" class="card-img-top" alt="PS5">
+            <div class="card-body">
+                <h5 class="card-title">Consola PS5</h5>
+                <p class="card-text fw-bold">$450.000</p>
+                <button class="btn btn-primary btn-agregar" data-id="104" data-nombre="Consola PS5" data-precio="450000">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
             <section class="container mt-5">
                 <h2>Productos Destacados Globales</h2>
                 <div id="lista-productos-api" class="row mt-4 g-4"></div>
             </section>
-
         </section>
+        <section class="container mt-5 p-4 border rounded bg-light">
+</section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="JS/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

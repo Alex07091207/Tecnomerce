@@ -283,3 +283,17 @@ footer svg {
     color: #2563eb; /* El mismo azul de tu marca */
     margin-top: 10px;
 }
+
+/* =========================================
+   AJUSTE DE SIMETRÍA PARA TARJETAS
+   ========================================= */
+.card {
+    height: 100%; /* La tarjeta ocupa todo el alto disponible */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 280px; /* Altura fija para TODAS las imágenes */
+    object-fit: cover; /* Llena el espacio sin deformar la imagen */
+    object-position: center top; /* Centra la imagen priorizando la parte superior */
+}
